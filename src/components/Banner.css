@@ -4,12 +4,19 @@
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url("../assets/banner.jpeg"), lightgray 50% / cover no-repeat;
+    url("../assets/banner.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
 }
 
-a {
+.watch-trailer {
   background-color: #be123c;
   color: #fff;
   padding: 10px 10px;
-  border-radius: 2px;
+  border-radius: 5px;
+}
+
+.play-btn {
+  margin-right: 10px;
 }

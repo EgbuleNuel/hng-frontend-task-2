@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import "./Banner.css";
 import { AiFillPlayCircle } from "react-icons/ai";
 
 const Banner = () => {
@@ -22,7 +23,7 @@ const Banner = () => {
           the target of hit men and women everywhere.
         </p>
         <a href="#" className="watch-trailer">
-          <AiFillPlayCircle className="play-btn"/>
+          <AiFillPlayCircle className="play-btn" />
           WATCH TRAILER
         </a>
       </div>

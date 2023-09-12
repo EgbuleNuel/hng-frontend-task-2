@@ -5,10 +5,15 @@ a {
   padding: 7px;
 }
 
+h4,
+h5 {
+  color: #fff;
+}
+
 .navbar {
   height: 80px;
   position: fixed;
-  top: 0;
+  top: 20px;
   padding-left: 5%;
   padding-right: 5%;
   width: 90vw;

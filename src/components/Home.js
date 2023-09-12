@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { fetchTopMovies } from "../api"; // Implement this function
+import { fetchTopMovies } from "../api"; 
 
 function Home() {
   const [topMovies, setTopMovies] = useState([]);
@@ -7,10 +7,9 @@ function Home() {
   useEffect(() => {
     async function fetchTop10Movies() {
       try {
-        const data = await fetchTopMovies(); // Implement this function
+        const data = await fetchTopMovies();
         setTopMovies(data.results);
       } catch (error) {
-        // Handle API error here
         console.error("Error fetching top movies:", error);
       }
     }

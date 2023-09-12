@@ -1,0 +1,15 @@
+.banner {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../assets/banner.jpeg"), lightgray 50% / cover no-repeat;
+}
+
+a {
+  background-color: #be123c;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 2px;
+}

@@ -1,19 +1,19 @@
 import React from "react";
 import Home from "./components/Home";
-import Search from "./components/Search";
 import MovieDetails from "./components/MovieDetails";
-import Error from "./components/Error";
-import "./index.css";
-import Banner from "./components/Banner";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const App = () => {
+function App() {
   return (
-   <div className="App">
-    <Banner />
-
-   </div>
-
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/MovieDetails/:id" element={<MovieDetails />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
-};
+}
 
 export default App;

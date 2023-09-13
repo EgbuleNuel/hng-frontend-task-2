@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <div className="left">
-          <a href="#">
+          <a href="/" className="nav">
             {" "}
             <AiOutlineVideoCamera size={25} />
           </a>
@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
         <div className="right">
           <h5>Sign In</h5>
-          <a href="#">
+          <a href="/" className="nav">
             <AiOutlineMenu size={25} />
           </a>
         </div>

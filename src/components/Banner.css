@@ -1,3 +1,11 @@
+h1 {
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .banner {
   background: linear-gradient(
       0deg,
@@ -7,12 +15,33 @@
     url("../assets/banner.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 100vh;
+}
+
+.details {
+  padding: 12% 7% 10% 7%;
+  width: 20vw;
+  height: 150px;
+  color: #fff;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.imdb-ratings,
+.rot-ratings {
+  display: flex;
+  gap: 5px;
+  padding-top: 15px;
 }
 
 .watch-trailer {
   background-color: #be123c;
   color: #fff;
+  margin-top: 25px;
   padding: 10px 10px;
   border-radius: 5px;
 }

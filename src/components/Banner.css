@@ -25,6 +25,10 @@ a {
   color: #fff;
 }
 
+.details .para {
+  padding-bottom: 30px;
+}
+
 .rating {
   display: flex;
   justify-content: space-between;
@@ -48,4 +52,68 @@ a {
 
 .play-btn {
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+  .banner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 42.2vh;
+  }
+
+  .details {
+    padding: 8% 7% 10% 7%;
+    width: 25vw;
+    height: 145px;
+    color: #fff;
+  }
+
+  .details p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 484px) {
+  h1 {
+    font-size: 10px;
+    letter-spacing: none;
+  }
+  .banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 31.6vh;
+  }
+
+  .details {
+    padding: 0 7% 0 7%;
+    width: 50vw;
+    height: 105px;
+    color: #fff;
+  }
+
+  .details p {
+    font-size: 9px;
+  }
+
+  .details .para{
+    padding-bottom: 0;
+  }
+
+  .rating {
+    padding-bottom: 5px;
+  }
+
+  .imdb-ratings,
+  .rot-ratings {
+    padding-top: 5px;
+  }
+
+  .watch-trailer {
+    margin-top: 5px;
+    padding: 5px 5px;
+    font-size: 8px;
+  }
 }

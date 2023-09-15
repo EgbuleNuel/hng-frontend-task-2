@@ -33,22 +33,24 @@ function Search() {
           className="search-input"
         />
         <button onClick={handleSearch} className="search-btn">
-          <IoSearch size={35} />
+          <IoSearch size={25} />
         </button>
       </div>
       {loading && <p>Loading...</p>}
-      <div className="movie-list">
-        {searchResults.map((movie) => (
-          <div key={movie.id} className="movie-card" data-testid="movie-card">
-            <img
-              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-              alt={movie.title}
-              data-testid="movie-poster"
-            />
-            <h2 data-testid="movie-title">{movie.title}</h2>
-            <p data-testid="movie-release-date">{movie.release_date}</p>
-          </div>
-        ))}
+      <div className="search-result">
+        <div className="movie-list">
+          {searchResults.map((movie) => (
+            <div key={movie.id} className="movie-card" data-testid="movie-card">
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt={movie.title}
+                data-testid="movie-poster"
+              />
+              <h2 data-testid="movie-title">{movie.title}</h2>
+              <p data-testid="movie-release-date">{movie.release_date}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

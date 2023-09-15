@@ -42,17 +42,3 @@ export const fetchMovieById = async (movieId) => {
     throw error;
   }
 };
-
-export const fetchMovieGenres = async (movieId) => {
-  try {
-    const response = await axios.get(`${baseUrl}/movie/${movieId}/genres`, {
-      params: {
-        api_key: apiKey,
-      },
-    });
-    const genres = response.data.genres.map((genre) => genre.name);
-    return genres;
-  } catch (error) {
-    throw error;
-  }
-};

@@ -1,0 +1,36 @@
+.footer {
+  padding: 100px 100px 0 100px;
+}
+
+.footer-icons,
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.copyright {
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 484px) {
+  .footer {
+    padding: 40px 0 0 0;
+  }
+
+  .link {
+    font-size: 14px;
+    text-align: center;
+  }
+}

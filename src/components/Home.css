@@ -28,7 +28,7 @@
 
 .see-more {
   text-decoration: none;
-  color: #be123c;
+  color: #e22d48;
   font-weight: 600;
 }
 
@@ -44,5 +44,15 @@
 @media screen and (max-width: 768px) {
   .movie-list {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 484px) {
+  .content-top h1 {
+    font-size: 14px;
+  }
+
+  .content-top .see-more {
+    font-size: 10px;
   }
 }

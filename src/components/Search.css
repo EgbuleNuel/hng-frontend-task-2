@@ -39,3 +39,12 @@
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
+
+@media (max-width: 484px) {
+  .search-input{
+    padding: 7px 10px;
+  }
+  .search-input::placeholder {
+    color: transparent;
+  }
+}

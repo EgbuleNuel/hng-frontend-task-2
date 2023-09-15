@@ -21,13 +21,9 @@ const Banner = () => {
             <p>97%</p>
           </div>
         </div>
-        <p>
-          John Wick is on the run after killing a member of the international
-          assassins' guild, and with a $14 million price tag on his head, he is
-          the target of hit men and women everywhere.
+        <p className="para">
+          John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
         </p>{" "}
-        <br />
-        <br />
         <a href="/" className="watch-trailer">
           <AiFillPlayCircle className="play-btn" />
           WATCH TRAILER

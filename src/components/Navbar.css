@@ -25,14 +25,31 @@ h5 {
   justify-content: space-between;
 }
 
-.left {
+.left,
+.right {
   display: flex;
   align-items: center;
   gap: 25px;
 }
 
-.right {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+@media (max-width: 484px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .wrapper {
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  h4 {
+    display: none;
+  }
 }

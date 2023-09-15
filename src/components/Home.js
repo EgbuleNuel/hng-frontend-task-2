@@ -4,9 +4,11 @@ import { fetchTopMovies } from "../api";
 import "./Home.css";
 import { AiOutlineRight } from "react-icons/ai";
 import Banner from "./Banner";
+import Footer from "./Footer";
 
 function Home() {
   const [topMovies, setTopMovies] = useState([]);
+  const [favoriteIds, setFavoriteIds] = useState([]);
 
   useEffect(() => {
     async function fetchTop10Movies() {
@@ -17,6 +19,8 @@ function Home() {
         console.error("Error fetching top movies:", error);
       }
     }
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    setFavoriteIds(favorites);
 
     fetchTop10Movies();
   }, []);
@@ -38,6 +42,7 @@ function Home() {
               key={movie.id}
               className="movie-card"
               data-testid="movie-card"
+              isFavorite={favoriteIds.includes(movie.id)}
             >
               <img
                 src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
@@ -55,6 +60,7 @@ function Home() {
             </Link>
           ))}
         </div>
+        <Footer />
       </div>
     </div>
   );

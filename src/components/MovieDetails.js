@@ -44,10 +44,10 @@ function MovieDetails() {
             alt={movie.title}
           />
         </div>
-        <div className="content-body">
+        <div>
           <div className="movie-info">
             <div className="title">
-              <h1 data-testid="movie-title">{movie.title}</h1>
+              <h2 data-testid="movie-title">{movie.title}</h2>
               <FaHeart
                 style={{ color: iconColor }}
                 className="fav-btn"
@@ -56,23 +56,29 @@ function MovieDetails() {
                 size={25}
               />
             </div>
+            <div className="content-body">
+              <div className="content-para">
+                <p data-testid="movie-release-date">
+                  Release Date (UTC): {movie.release_date}
+                </p>
+                <p data-testid="movie-runtime">
+                  Runtime: {movie.runtime} minutes
+                </p>
+                <p data-testid="movie-overview">{movie.overview}</p>
+              </div>
 
-            <p data-testid="movie-release-date">
-              Release Date (UTC): {movie.release_date}
-            </p>
-            <p data-testid="movie-runtime">Runtime: {movie.runtime} minutes</p>
-            <p data-testid="movie-overview">{movie.overview}</p>
+              <div className="more">
+                <a href="/" className="see-show">
+                  <IoTicketOutline size={20} /> See Showtimes
+                </a>
+                <a href="/" className="more-options">
+                  <SlList size={15} /> More Watch Options
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="more">
-            <a href="/">
-              <SlList size={20} /> See Showtimes
-            </a>
-            <a href="/">
-              <IoTicketOutline size={20} /> More Watch Options
-            </a>
-          </div>
-          <Footer />
         </div>
+        <Footer />
       </div>
     </div>
   );

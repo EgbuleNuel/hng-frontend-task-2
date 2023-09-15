@@ -4,6 +4,10 @@
   height: 100vh;
 }
 
+.content-body {
+  display: flex;
+}
+
 .movie-details {
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -32,3 +36,39 @@
   cursor: pointer;
 }
 
+.content-body {
+  padding-left: 30px;
+}
+
+.content-body p {
+  padding: 5px 0;
+}
+
+.content-body .content-para {
+  width: 80%;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.see-show {
+  text-align: center;
+  background-color: #e22d48;
+  color: #fff;
+  padding: 7px 7px;
+  border-radius: 5px;
+}
+
+.more-options {
+  text-align: center;
+  background-color: #f8cdd4;
+  border: 1px solid #e22d48;
+  color: #514e4e;
+  padding: 7px 7px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
